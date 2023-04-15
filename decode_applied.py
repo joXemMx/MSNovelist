@@ -11,8 +11,6 @@ Created on Tue Feb 25 15:36:30 2020
 @author: stravsm
 """
 
-from tensorflow.keras.utils import plot_model
-
 import infrastructure.generator as gen
 from collections import Counter
 import numpy as np
@@ -168,7 +166,6 @@ model_transcode = model.TranscoderModel(
                 blueprints = blueprints,
                  config = sc.config,
                  round_fingerprints = round_fingerprints)
-plot_model(model_decode, to_file='decoder_model.png', show_shapes=True)
 
 # Build models by calling them
 y_ = model_transcode(blueprints)
