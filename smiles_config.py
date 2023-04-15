@@ -22,7 +22,7 @@ else:
 
 
 FILENAME_DEFAULT = "config.yaml"
-FILENAME_MACHINE = "config." + os.environ['COMPUTERNAME'] + '.yaml'
+FILENAME_MACHINE = "config." + "DOCKER-LIGHT" + '.yaml'
 
 config_file = [FILENAME_DEFAULT, FILENAME_MACHINE]
 if args.config is not None:
